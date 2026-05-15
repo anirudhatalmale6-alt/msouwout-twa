@@ -1,0 +1,54 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.haitibiznis.msouwout'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.haitibiznis.msouwout"
+        minSdk 19
+        targetSdk 34
+        versionCode 1
+        versionName "1.0.0"
+
+        manifestPlaceholders = [
+            hostName: "msouwout.com",
+            defaultUrl: "https://msouwout.com",
+            launcherName: "MsouWout",
+            assetStatements: '[{"relation": ["delegate_permission/common.handle_all_urls"],' +
+                '"target": {"namespace": "web", "site": "https://msouwout.com"}}]'
+        ]
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("../android.keystore")
+            storePassword "msouwout2026"
+            keyAlias "msouwout"
+            keyPassword "msouwout2026"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt')
+        }
+        debug {
+            signingConfig signingConfigs.release
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+dependencies {
+    implementation 'com.google.androidbrowserhelper:androidbrowserhelper:2.5.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+}

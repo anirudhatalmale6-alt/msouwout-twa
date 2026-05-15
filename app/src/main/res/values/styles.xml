@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.MsouWout" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">#00209F</item>
+        <item name="colorPrimary">#00209F</item>
+        <item name="colorPrimaryDark">#001570</item>
+        <item name="android:statusBarColor">#00209F</item>
+        <item name="android:navigationBarColor">#000000</item>
+    </style>
+</resources>

@@ -1,0 +1,50 @@
+{
+  "packageId": "com.haitibiznis.msouwout",
+  "host": "msouwout.com",
+  "name": "MsouWout",
+  "launcherName": "MsouWout",
+  "display": "standalone",
+  "themeColor": "#00209F",
+  "themeColorDark": "#00209F",
+  "navigationColor": "#000000",
+  "navigationColorDark": "#000000",
+  "navigationDividerColor": "#000000",
+  "navigationDividerColorDark": "#000000",
+  "backgroundColor": "#00209F",
+  "enableNotifications": true,
+  "startUrl": "/",
+  "iconUrl": "https://msouwout.com/assets/icon-512.png",
+  "maskableIconUrl": "https://msouwout.com/assets/icon-512.png",
+  "monochromeIconUrl": "https://msouwout.com/assets/icon-512.png",
+  "splashScreenFadeOutDuration": 300,
+  "signingKey": {
+    "path": "android.keystore",
+    "alias": "msouwout"
+  },
+  "appVersionName": "1.0.0",
+  "appVersionCode": 1,
+  "shortcuts": [],
+  "generatorApp": "bubblewrap-cli",
+  "webManifestUrl": "https://msouwout.com/manifest.json",
+  "fallbackType": "customtabs",
+  "enableSiteSettingsShortcut": true,
+  "isChromeOSOnly": false,
+  "isMetaQuest": false,
+  "fullScopeUrl": "https://msouwout.com/",
+  "minSdkVersion": 19,
+  "fingerprints": [
+    {
+      "type": "sha256Cert",
+      "value": "05:A1:21:41:7F:BD:CC:F0:DD:44:F0:02:94:95:42:21:CF:9F:0C:8B:D3:0F:72:46:75:CB:75:EC:82:C7:2D:49"
+    }
+  ],
+  "additionalTrustedOrigins": [],
+  "retainedBundles": [],
+  "playBilling": {
+    "enabled": false
+  },
+  "locationDelegation": {
+    "enabled": false
+  },
+  "features": {}
+}
